@@ -1,0 +1,21 @@
+Question 1)
+
+Stubs :
+- Stub Client : Contient des "fausses" méthodes qui communiquent avec des méthodes distantes.
+- Stub Serveur : Contient les traitement que l'on souhaite executé.
+
+Skeletons :
+- Stub Serveur = Skeletons.
+
+note : De façon générale, lorsque l'on parle de Stub, on fait en référence uniquement au client.
+
+Question 2)
+
+Pour simuler le passage par réference, on envoie une valeur qui vaudra la réference de l'Objet
+
+Question 3)
+
+On doit mentionner implement Serializable car sans ça, l'objet ne peut pas transiter sur le réseau.
+Serializable permet de "casser" l'objet en un flux d'octet qui peut à l'inverse être reconstitué comme l'objet d'origine
+
+

@@ -7,13 +7,13 @@ public class SkeletonObjetDistant  {
     private int port ;
     private ObjetDistant od ;
 
-    public SkeletonObjetDistant ( ObjetDistant o , int p ){ od = o; port =p; }
+    public SkeletonObjetDistant (ObjetDistant o , int p ){od = o; port =p;}
 
     public void run () throws IOException, ClassNotFoundException {
-
-        ServerSocket st = new ServerSocket(this.port);
-        Socket s = st.accept();
-        traiterRequete(s);
+        ServerSocket ss = new ServerSocket(this.port);
+        while(true) {
+            traiterRequete(ss.accept());
+        }
 
     }
 
